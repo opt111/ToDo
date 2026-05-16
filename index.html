@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#6d4882]">
+  <header>
+
+  </header>
+  <main class="">
+    <div class="max-w-xs m-auto flex flex-col justify-center items-center h-screen gap-5">
+      <h1 class="self-center text-5xl font-bold text-white">ToDo App</h1>
+
+      <ul class="w-full flex flex-col gap-0.5" id="todo-list"></ul>
+      <input class="border-1 border-black bg-white rounded p-2 border-none w-full" type="text" id="todo-input"
+        placeholder="Enter task">
+      <button class="hover:cursor-pointer bg-purple-500 p-2 rounded px-6 font-sans font-[500] text-white w-full"
+        id="add-btn">Add</button>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
