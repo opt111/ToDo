@@ -30,8 +30,20 @@ todoList.addEventListener('click', (e) => {
   if (e.target.classList.contains('delete-btn')) {
     e.target.closest('li').remove()
     saveData()
-  };
+  }
+
+  else if (e.target.type === 'checkbox') {
+    if (e.target.checked) {
+      e.target.setAttribute('checked', 'checked'); 
+    } else {
+      e.target.removeAttribute('checked'); 
+    }
+    saveData(); 
+  }
 });
+
+
+
 
 function saveData() {
   localStorage.setItem('todos', todoList.innerHTML);
